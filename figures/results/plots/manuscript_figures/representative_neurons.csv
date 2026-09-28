@@ -1,0 +1,6 @@
+selection,neuron,class,cluster
+cluster 1 centroid,30_1_1_21a,PMLS-PLLS,1
+cluster 2 centroid,72513V1_3Slice7Cell2,V1-V2,2
+V1/V2 class centroid,121012V1_3Slice7Cell1,V1-V2,2
+PMLS/PLLS/21a class centroid,31_3_3_PLLS,PMLS-PLLS,1
+PMLS/PLLS/21a in opposite cluster,62_4_3_PMLS,PMLS-PLLS,2

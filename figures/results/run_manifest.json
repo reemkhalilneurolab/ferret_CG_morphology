@@ -1,0 +1,31 @@
+{
+  "python": "3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "base_directory": "C:\\Users\\ahmad\\Documents\\GitHub\\Briggs_V1_V2_PMLS_PLLS\\data\\Briggs",
+  "save_directory": "C:\\Users\\ahmad\\Documents\\GitHub\\Briggs_V1_V2_PMLS_PLLS\\figures\\Briggs_lm_corrected_20260820",
+  "project_name": "Briggs",
+  "distance_metric": "l1",
+  "linkage_method": "ward",
+  "number_of_clusters": 2,
+  "normalize_descriptor_radii": true,
+  "lmeasure_standardize": true,
+  "lmeasure_normalization": "standard",
+  "remove_types": [
+    "axon"
+  ],
+  "excluded_descriptors": [],
+  "excluded_neurons": [
+    "S2A_2_3_28_b8_v1_L2_3_s1_N4_LH"
+  ],
+  "plot_neuron": false,
+  "plot_step_function": true,
+  "descriptors_retained_for_paper": [
+    "Tortuosity",
+    "Branching_Pattern",
+    "Wiring",
+    "Flux",
+    "Leaf",
+    "Spread",
+    "Energy"
+  ]
+}

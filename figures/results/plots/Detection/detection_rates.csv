@@ -1,0 +1,29 @@
+descriptor,class,score_type,value,interpretation,explanation
+Tortuosity,PMLS-PLLS,mean,67.3076923076923,Partial separation,
+Tortuosity,V1-V2,mean,75.36231884057972,Partial separation,
+Tortuosity,PMLS-PLLS,threshold,0.0,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Tortuosity,V1-V2,threshold,55.223880597014926,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Branching_Pattern,PMLS-PLLS,mean,72.54901960784314,Partial separation,
+Branching_Pattern,V1-V2,mean,81.15942028985508,Strong separation,
+Branching_Pattern,PMLS-PLLS,threshold,38.0,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Branching_Pattern,V1-V2,threshold,88.05970149253731,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Wiring,PMLS-PLLS,mean,62.5,Partial separation,
+Wiring,V1-V2,mean,71.64179104477611,Partial separation,
+Wiring,PMLS-PLLS,threshold,0.0,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Wiring,V1-V2,threshold,5.970149253731343,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Flux,PMLS-PLLS,mean,80.0,Partial separation,
+Flux,V1-V2,mean,85.5072463768116,Strong separation,
+Flux,PMLS-PLLS,threshold,34.0,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Flux,V1-V2,threshold,89.55223880597015,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Leaf,PMLS-PLLS,mean,68.0,Partial separation,
+Leaf,V1-V2,mean,69.44444444444444,Partial separation,
+Leaf,PMLS-PLLS,threshold,0.0,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Leaf,V1-V2,threshold,0.0,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Spread,PMLS-PLLS,mean,82.0,Strong separation,
+Spread,V1-V2,mean,88.05970149253731,Strong separation,
+Spread,PMLS-PLLS,threshold,68.0,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Spread,V1-V2,threshold,73.13432835820896,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Energy,PMLS-PLLS,mean,74.0,Partial separation,
+Energy,V1-V2,mean,81.08108108108108,Strong separation,
+Energy,PMLS-PLLS,threshold,18.0,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.
+Energy,V1-V2,threshold,91.04477611940298,,A neuron is considered well-detected only if its detection strength β is at least 70%. This score reflects the percentage of neurons in the class that meet that threshold.

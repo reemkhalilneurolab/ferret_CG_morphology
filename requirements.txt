@@ -1,0 +1,11 @@
+# Versions pinned to those used for the analyses reported in the manuscript
+# Versions the published results were produced with (Python 3.12.3, Windows 11).
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.6.1
+matplotlib==3.10.0
+seaborn==0.13.2
+networkx==3.4.2
+plotly==6.2.0
+statsmodels==0.14.4

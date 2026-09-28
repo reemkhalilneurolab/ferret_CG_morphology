@@ -1,0 +1,15 @@
+{
+  "descriptors": [
+    "Tortuosity",
+    "Branching_Pattern",
+    "Wiring",
+    "Flux",
+    "Leaf",
+    "Spread",
+    "Energy"
+  ],
+  "n_neurons": 117,
+  "n_unordered_neuron_pairs": 6786,
+  "effective_descriptor_count": 5.043212664610617,
+  "interpretation": "Diagnostic only; primary joint distance weighting is unchanged."
+}

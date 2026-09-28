@@ -1,0 +1,8 @@
+Descriptor,Mean Silhouette,β-Silhouette Correlation,Overlap Coefficient,Bhattacharyya Distance,Fisher Ratio,Interpretation
+Tortuosity,0.127,0.817,0.88,0.017,0.011,Weak global separation (silhouette ≤ 0.3) | β agrees with silhouette (correlation > 0.5) | High overlap (OVL ≥ 0.5) | Low Bhattacharyya → distributions overlap | Weak separation (FDR ≤ 1.0)
+Branching_Pattern,0.332,0.953,0.685,0.077,0.251,Good global class separation (silhouette > 0.3) | β agrees with silhouette (correlation > 0.5) | High overlap (OVL ≥ 0.5) | Low Bhattacharyya → distributions overlap | Weak separation (FDR ≤ 1.0)
+Wiring,0.078,0.854,0.9,0.01,0.013,Weak global separation (silhouette ≤ 0.3) | β agrees with silhouette (correlation > 0.5) | High overlap (OVL ≥ 0.5) | Low Bhattacharyya → distributions overlap | Weak separation (FDR ≤ 1.0)
+Flux,0.345,0.967,0.66,0.08,0.265,Good global class separation (silhouette > 0.3) | β agrees with silhouette (correlation > 0.5) | High overlap (OVL ≥ 0.5) | Low Bhattacharyya → distributions overlap | Weak separation (FDR ≤ 1.0)
+Leaf,0.038,0.272,0.93,0.006,0.004,Weak global separation (silhouette ≤ 0.3) | β does not track global structure well | High overlap (OVL ≥ 0.5) | Low Bhattacharyya → distributions overlap | Weak separation (FDR ≤ 1.0)
+Spread,0.329,0.872,0.658,0.084,0.175,Good global class separation (silhouette > 0.3) | β agrees with silhouette (correlation > 0.5) | High overlap (OVL ≥ 0.5) | Low Bhattacharyya → distributions overlap | Weak separation (FDR ≤ 1.0)
+Energy,0.323,0.976,0.718,0.056,0.093,Good global class separation (silhouette > 0.3) | β agrees with silhouette (correlation > 0.5) | High overlap (OVL ≥ 0.5) | Low Bhattacharyya → distributions overlap | Weak separation (FDR ≤ 1.0)
