@@ -1010,10 +1010,11 @@ def plot_step_function_leaf(descriptor_name, neuron_name, neuron_class, step_dat
     label_fontsize = 16
     tick_fontsize = 14
 
-    plt.xlabel('Distance from Soma (micrometers)', fontsize=label_fontsize)
+    plt.xlabel('Normalized Distance from Soma', fontsize=label_fontsize)
     plt.ylabel(descriptor_name.capitalize() + " Descriptor Values", fontsize=label_fontsize)
     plt.xticks(fontsize=tick_fontsize)
     plt.yticks(fontsize=tick_fontsize)
+    plt.ylim(bottom=0)
 
     plt.title(f'{descriptor_name.capitalize()} for {neuron_name}', fontsize=label_fontsize)
     # plt.legend(fontsize=14)

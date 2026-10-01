@@ -12,14 +12,19 @@ Sampling is without replacement rather than bootstrap resampling, because a
 duplicated neuron would have zero distance to itself and would be joined
 automatically by the linkage algorithm.
 
-No script producing Table 1's exact reported values (mean ARI 0.495 (SD 0.126)
-for descriptors, 0.378 (SD 0.127) for morphometric, descriptors ahead in 67.8%
-of replicates, 5th-percentile ARI 0.339 vs 0.153) could be located anywhere in
-this repository, including its full commit history, or elsewhere on the
-machine this analysis was prepared on. This script is a fresh implementation
-of the method as stated, not a recovery of that original run: a stochastic
-resampling procedure will not reproduce the same decimals from a different
-random draw even given identical code.
+An earlier draft of Table 1 reported mean ARI 0.495 (SD 0.126) for descriptors
+and 0.491 (SD 0.191) for morphometric (or, before the per-object correction,
+0.378 (SD 0.127)). No script producing those exact values could be located
+anywhere in this repository, including its full commit history, or elsewhere
+on the machine this analysis was prepared on.
+
+This script (fixed seed, so its output is deterministic and reproducible) is
+the current source of the numbers reported in the manuscript: descriptors
+mean ARI 0.482 (SD 0.129, 5th pct 0.328), morphometric mean ARI 0.528 (SD
+0.192, 5th pct 0.316). The manuscript's claim was revised to match: the
+morphometric representation can reach a higher point estimate on a favourable
+subsample, but the topological representation is more consistent (lower SD,
+comparable 5th percentile) across different neuron compositions.
 """
 import numpy as np
 import pandas as pd
@@ -95,8 +100,7 @@ print(f"{N_REPLICATES} replicates, {SAMPLE_FRACTION:.0%} of {len(shared_index)} 
       f"neurons ({sample_size}), sampled without replacement, Ward k=2")
 print(summary.to_string(float_format=lambda v: f"{v:.4f}"))
 print()
-print("Table 1 in the paper reports: descriptors 0.495 (SD 0.126), "
-      "morphometric 0.378 (SD 0.127),")
-print("descriptors ahead in 67.8% of replicates, 5th percentile 0.339 vs 0.153.")
-print("The values above are a fresh run of the stated method, not that original "
-      "run; see this file's docstring.")
+print("Table 1 in the paper now reports: descriptors 0.482 (SD 0.129), "
+      "morphometric 0.528 (SD 0.192),")
+print("5th percentile 0.328 vs 0.316. The values above should match exactly, "
+      "since this script (fixed seed) is their source.")

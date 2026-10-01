@@ -96,16 +96,25 @@ an hour, dominated by the descriptor stage. Setting `PLOT_STEP_FUNCTION = False`
 in `config.py` cuts that substantially: it otherwise writes one PNG per neuron
 per descriptor.
 
-## The notebook
+## The notebooks
 
 `notebooks/reproduce_figures.ipynb` walks through the analysis end to end,
 showing the code that produces each published figure alongside the figure
 itself. It reads the shipped precomputed outputs, so it runs in under a minute
 without recomputing descriptors.
 
+`notebooks/manuscript_figures_and_tables.ipynb` is the short version: one
+markdown header and one live code cell per manuscript figure and table, no
+walkthrough or verification narrative. The two figures that are external
+graphics rather than code output (Figure 1, a schematic adapted from published
+sources, and Figure 6, a Canva-made summary infographic) are loaded and
+displayed as images instead of regenerated; every other figure and table is
+computed in the cell that shows it.
+
 ```bash
 pip install jupyter
 jupyter notebook notebooks/reproduce_figures.ipynb
+jupyter notebook notebooks/manuscript_figures_and_tables.ipynb
 ```
 
 ## Supporting analyses
@@ -152,6 +161,32 @@ per neuron, used for the comparison against conventional morphometrics.
 
 One reconstruction is excluded, listed in `EXCLUDED_NEURONS` in `config.py`
 with the reason.
+
+## Running on your own data
+
+`neurotopo/` has no Briggs-specific code: every function in
+`neuron_processor.py`, `descriptors.py`, and `distances.py` takes a neuron, a
+directory, or a distance matrix as a plain argument, not a hardcoded path or
+dataset name. The only dataset-specific state lives in `config.py`. To run the
+pipeline on a different set of reconstructions:
+
+1. Add your SWC files under `data/<your_project_name>/<class>/*.swc`, one
+   subfolder per class label (the folder name becomes the class).
+2. In `config.py`, set `PROJECT_NAME = '<your_project_name>'`. If you have an
+   L-Measure CSV for the conventional-morphometrics comparison, it is expected
+   at `data/<your_project_name>/lmeasure_data.csv`.
+3. Clear or replace `EXCLUDED_NEURONS` — the one entry shipped there
+   (`S2A_2_3_28_b8_v1_L2_3_s1_N4_LH`) is specific to this cohort.
+4. Run with a fresh run name so your output never collides with the shipped
+   `figures/results/`:
+
+   ```bash
+   NEUROTOPO_RUN=my_dataset python reproduce_paper.py all
+   ```
+
+That is the same path described under "Reproducing from scratch" above; the
+only difference is pointing `PROJECT_NAME` at your own data instead of
+`Briggs`.
 
 ## Settings that change the numbers
 
